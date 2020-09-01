@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Chat UI</title>
+</head> 
+<body>
+  <div style="max-width: 300px; margin: 10px auto" >
+
+    <!-- Chat window start -->
+    <div class="card bg-success">
+      <h5 class="card-header bg-warning">AJS1</h5>
+      <div class="card-body" id="chat-body" style="max-height: 300px;
+      overflow-y: scroll">
+
+        <!-- Message Start -->
+        <div class="card mb-1">
+          <div class="card-body">
+            <h6 class="d-flex justify-content-between">Mark <span class="text-muted">02.01.2019</span></h6>
+            <div>Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+        <!-- Message End -->
+
+      </div>
+      <form id="chat-form">
+        <div class="input-group">
+          <textarea required class="form-control" rows="1" id="inlineFormInputGroup" placeholder="Your message"></textarea>
+          <button id="button" class="input-group-append py-0 px-3 border-0">Send</button>
+        </div>
+      </form>
+    </div>
+    <!-- Chat window end -->
+
+  </div>
+<!--  <script src="jquery-3.3.1.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
