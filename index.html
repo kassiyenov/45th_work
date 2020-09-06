@@ -39,7 +39,7 @@
   <script src="index_1.js"></script>
   <script>
     var getMessages = function(){
-      return $.get("http://146.185.154.90:8000/messages");
+      return $.get("https://cors-anywhere.herokuapp.com/http://146.185.154.90:8000/messages");
     };
 
     var showMessage = function(message){
@@ -56,7 +56,7 @@
     }
 
     var postMessage = function(message){
-      return $.post("http://146.185.154.90:8000/messages", message);
+      return $.post("https://cors-anywhere.herokuapp.com/http://146.185.154.90:8000/messages", message);
       // return Promise.resolve(message);
     };
 
